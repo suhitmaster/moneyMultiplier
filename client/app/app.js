@@ -17,16 +17,21 @@ import {
 import _Auth from '../components/auth/auth.module';
 import account from './account';
 import admin from './admin';
+import pdf from './pdf';
+import bankDetails from './bankDetails';
+import investment from './investment';
+import spareMoney from './spareMoney';
+import limit from './limit';
 import navbar from '../components/navbar/navbar.component';
 import footer from '../components/footer/footer.component';
 import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
-
 import './app.css';
 
 angular.module('moneyMultiplierApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap,
-  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, util
+  _Auth, account, admin, 'validation.match', navbar, footer, main, constants, util, pdf, bankDetails,
+  investment, spareMoney, limit
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

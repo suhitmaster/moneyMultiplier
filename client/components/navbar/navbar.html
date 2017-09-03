@@ -7,12 +7,33 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">money-multiplier</a>
+      <a href="/" class="navbar-brand">MoneyMultiplier</a>
     </div>
     <div uib-collapse="$ctrl.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in $ctrl.menu" ui-sref-active="active">
             <a ui-sref="{{item.state}}">{{item.title}}</a>
+        </li>
+        <li ng-hide="$ctrl.isLoggedIn()">
+          <a href="http://127.0.0.1:5000/">ChatBot</a>
+        </li>
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active">
+          <a ui-sref="bankDetails">Bank Details</a>
+        </li>
+
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active">
+          <a ui-sref="investment">Investment</a>
+        </li>
+
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active">
+          <a ui-sref="spareMoney">Spare Money</a>
+        </li>
+
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active">
+          <a ui-sref="limit">Limit</a>
+        </li>
+        <li ng-show="$ctrl.isLoggedIn()" ui-sref-active="active">
+          <a ui-sref="pdf">Upload PDF</a>
         </li>
         <li ng-show="$ctrl.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
       </ul>
