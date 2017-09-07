@@ -57,6 +57,6 @@ export default class SpareMoney {
           y: 0.2
         }]
       }]
-    }
+    };
   }
 }
