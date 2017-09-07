@@ -1,20 +1,4 @@
 'use strict';
-import Chart from 'chart.js';
-
-const data = {
-  datasets: [{
-    data: [10, 20, 30, 50],
-    backgroundColor: ['#f7464a', '#46bfbd', '#fdb45c', '#FF0000'],
-  }],
-  // These labels appear in the legend and in the tooltips when hovering different arcs
-  labels: [
-    'First',
-    'second',
-    'third',
-    'fourth',
-  ]
-};
-
 
 export default class SpareMoney {
   getCurrentUser: Function;
@@ -22,15 +6,57 @@ export default class SpareMoney {
   constructor(Auth) {
     'ngInject';
     this.getCurrentUser = Auth.getCurrentUserSync;
-    this.generateChart();
+    this.sparedata = {
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+      },
+      title: {
+        text: 'You have spend money on this in last month.'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+            enabled: true,
+            format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+            style: {
+              color: 'black'
+            }
+          }
+        }
+      },
+      series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+          name: 'Travel',
+          y: 56.33
+        }, {
+          name: 'Food',
+          y: 24.03,
+          sliced: true,
+          selected: true
+        }, {
+          name: 'Shopping',
+          y: 10.38
+        }, {
+          name: 'Recharge',
+          y: 4.77
+        }, {
+          name: 'Petrol',
+          y: 0.91
+        }, {
+          name: 'Misc',
+          y: 0.2
+        }]
+      }]
+    }
   }
-
-  generateChart() {
-    const ctx = document.getElementById('myChart');
-    const myChart = new Chart(ctx, {
-      type: 'pie',
-      data: data,
-    });
-  }
-
 }

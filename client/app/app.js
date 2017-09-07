@@ -28,10 +28,11 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import './app.css';
+import 'highcharts-ng';
 
 angular.module('moneyMultiplierApp', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap,
   _Auth, account, admin, 'validation.match', navbar, footer, main, constants, util, pdf, bankDetails,
-  investment, spareMoney, limit
+  investment, spareMoney, limit, 'highcharts-ng'
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
