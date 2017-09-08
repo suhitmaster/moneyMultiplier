@@ -17,7 +17,7 @@ export default class BankController {
 
       document.getElementById('spareMoney').innerHTML = `<p>
             You can invest ${50000 - limit} to either schemes avaible in 
-            <a href="#">investment</a> menu
+            <a href="http://localhost:3000/investment">investment</a> menu
          </p>`;
     } else {
       console.log('not limit set');
