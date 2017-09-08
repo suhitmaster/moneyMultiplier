@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./investment.css">
+
 <header class="hero-unit" id="banner">
   <div class="container">
     <h3>Welcome {{ investment.getCurrentUser().name }}!</h3>
@@ -5,7 +7,281 @@
     <img src="assets/images/dollar_sign.jpg" alt="I'm MoneyMultiplier" width="100px" height="100px">
   </div>
 </header>
+<div class="main-contain">
+  <div class="box" id="reliance">
 
-<highchart id="mfReliance" config="investment.mfReliance"></highchart>
+    <div class="toplft_cl1" style="text-align: center;margin: 1%">
+      <div>
+        <span>
+          <span class="nav-val"> 38.319 </span>
 
-<highchart id="mfIcici" config="investment.mfIcici"></highchart>
+            <span class="gr_16 uparw_pcb" style="font-size:18px;">
+            <strong style="font-size:21px;color: #46d928"> +0.17</strong> (0.44%)</span>
+        </span>
+      </div>
+      <p class="top10bd PL2">NAV as on 07 Sep, 2017</p>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
+
+    </div>
+
+    <highchart class="highchart" id="mfReliance" config="investment.mfReliance"></highchart>
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div cxlass="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">SBI BLUE CHIP FUND-DIRECT PLAN -GROWTH</h4>
+          </div>
+          <div class="modal-body">
+            <div class="MT35 clearfix">
+              <div class="returns-table">
+                <h3><b>Returns <span>(NAV as on 07 Sep, 2017)</span></b></h3>
+                <table width="100%" class="tblporhd">
+                  <tbody><tr>
+                    <th width="34%" align="left">Period </th>
+                    <th width="33%" class="ctr">Returns (%)</th>
+                    <th width="33%" class="ctr">Rank #</th>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">1 mth</span></td>
+                    <td class="rgt"><span class="r_12">-0.8</span></td>
+                    <td class="rgt">13</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">3 mth</span></td>
+                    <td class="rgt"><span class="gr_12">6.3</span></td>
+                    <td class="rgt">13</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">6 mth</span></td>
+                    <td class="rgt"><span class="gr_12">24.7</span></td>
+                    <td class="rgt">7</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">1 year</span></td>
+                    <td class="rgt"><span class="gr_12">30.7</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">2 year</span></td>
+                    <td class="rgt"><span class="gr_12">35.3</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">3 year</span></td>
+                    <td class="rgt"><span class="gr_12">25.5</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">5 year</span></td>
+                    <td class="rgt"><span class="#000000">-</span></td>
+                    <td class="rgt">-</td>
+                  </tr>
+                  </tbody></table>
+                <p class="gD_11 MT7">#Rank within 28 <a href="/mutual-funds/performance-tracker/returns/sector-banking-and-finance.html" style="color:#02536C">Sector - Banking &amp; Finance  </a>Schemes.</p>
+
+              </div>
+              <div class="returns-table">
+                <h3>Absolute Returns <span>(in %)</span></h3>
+                <table width="100%" class="tblporhd">
+                  <tbody><tr>
+                    <th width="17%" align="left">Year </th>
+                    <th width="17%" class="ctr"> Qtr 1 </th>
+                    <th width="17%" class="ctr">Qtr 2</th>
+                    <th width="17%" class="ctr">Qtr 3 </th>
+                    <th width="16%" class="ctr">Qtr 4 </th>
+                    <th width="16%" class="ctr">Annual</th>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13" align="left">2017</span></td>
+                    <td class="rgt"><span class="gr_12">23.6</span></td>
+                    <td class="rgt"><span class="gr_12">9.0</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2016</span></td>
+                    <td class="rgt"><span class="r_12">-6.0</span></td>
+                    <td class="rgt"><span class="gr_12">21.9</span></td>
+                    <td class="rgt"><span class="gr_12">12.6</span></td>
+                    <td class="rgt"><span class="r_12">-9.0</span></td>
+                    <td class="rgt"><span class="gr_12">21.7</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2015</span></td>
+                    <td class="rgt"><span class="r_12">-3.1</span></td>
+                    <td class="rgt"><span class="gr_12">0.2</span></td>
+                    <td class="rgt"><span class="r_12">-2.8</span></td>
+                    <td class="rgt"><span class="r_12">-4.1</span></td>
+                    <td class="rgt"><span class="r_12">-6.7</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2014</span></td>
+                    <td class="rgt"><span class="gr_12">7.9</span></td>
+                    <td class="rgt"><span class="gr_12">30.0</span></td>
+                    <td class="rgt"><span class="gr_12">1.9</span></td>
+                    <td class="rgt"><span class="gr_12">20.3</span></td>
+                    <td class="rgt"><span class="gr_12">69.9</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2013</span></td>
+                    <td class="rgt"><span class="r_12">-12.0</span></td>
+                    <td class="rgt"><span class="gr_12">1.6</span></td>
+                    <td class="rgt"><span class="r_12">-13.5</span></td>
+                    <td class="rgt"><span class="gr_12">19.5</span></td>
+                    <td class="rgt"><span class="r_12">-4.7</span></td>
+                  </tr>
+                </tbody></table>
+              </div>
+              <div class="CL"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 5% 0;color: #222222"/>
+  <div id="icici" class="box">
+    <div style="text-align: center;margin: 1%">
+      <div class="toplft_cl1">
+        <div class="toplft_cl1">
+          <div>
+            <span class="nav-val">63.360</span>
+            <span class="gr_16 uparw_pcb" style="font-size:18px;">
+              <strong style="font-size:21px;color: #46d928">+0.36</strong> (0.57%)
+            </span>
+            </span>
+          </div>
+          <p class="top10bd PL2">NAV as on 07 Sep, 2017</p>		</div>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-icici">Details</button>
+      </div>
+    <highchart class="highchart" id="mfIcici" config="investment.mfIcici"></highchart>
+
+
+    <!-- Modal -->
+    <div id="myModal-icici" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">SBI BLUE CHIP FUND-DIRECT PLAN -GROWTH</h4>
+          </div>
+          <div class="modal-body">
+            <div class="MT35 clearfix">
+              <div class="returns-table">
+                <h3><b>Returns <span>(NAV as on 07 Sep, 2017)</span></b></h3>
+                <table width="100%" class="tblporhd">
+                  <tbody><tr>
+                    <th width="34%" align="left">Period </th>
+                    <th width="33%" class="ctr">Returns (%)</th>
+                    <th width="33%" class="ctr">Rank #</th>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">1 mth</span></td>
+                    <td class="rgt"><span class="r_12">-0.8</span></td>
+                    <td class="rgt">13</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">3 mth</span></td>
+                    <td class="rgt"><span class="gr_12">6.3</span></td>
+                    <td class="rgt">13</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">6 mth</span></td>
+                    <td class="rgt"><span class="gr_12">24.7</span></td>
+                    <td class="rgt">7</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">1 year</span></td>
+                    <td class="rgt"><span class="gr_12">30.7</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">2 year</span></td>
+                    <td class="rgt"><span class="gr_12">35.3</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">3 year</span></td>
+                    <td class="rgt"><span class="gr_12">25.5</span></td>
+                    <td class="rgt">3</td>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13">5 year</span></td>
+                    <td class="rgt"><span class="#000000">-</span></td>
+                    <td class="rgt">-</td>
+                  </tr>
+                  </tbody></table>
+                <p class="gD_11 MT7"># Moneycontrol Rank within 28 <a href="/mutual-funds/performance-tracker/returns/sector-banking-and-finance.html" style="color:#02536C">Sector - Banking &amp; Finance  </a>Schemes.</p>
+
+              </div>
+              <div class="returns-table">
+                <h3>Absolute Returns <span>(in %)</span></h3>
+                <table width="100%" class="tblporhd">
+                  <tbody><tr>
+                    <th width="17%" align="left">Year </th>
+                    <th width="17%" class="ctr"> Qtr 1 </th>
+                    <th width="17%" class="ctr">Qtr 2</th>
+                    <th width="17%" class="ctr">Qtr 3 </th>
+                    <th width="16%" class="ctr">Qtr 4 </th>
+                    <th width="16%" class="ctr">Annual</th>
+                  </tr>
+                  <tr>
+                    <td><span class="b_13" align="left">2017</span></td>
+                    <td class="rgt"><span class="gr_12">23.6</span></td>
+                    <td class="rgt"><span class="gr_12">9.0</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                    <td class="rgt"><span class="bl_12">-</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2016</span></td>
+                    <td class="rgt"><span class="r_12">-6.0</span></td>
+                    <td class="rgt"><span class="gr_12">21.9</span></td>
+                    <td class="rgt"><span class="gr_12">12.6</span></td>
+                    <td class="rgt"><span class="r_12">-9.0</span></td>
+                    <td class="rgt"><span class="gr_12">21.7</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2015</span></td>
+                    <td class="rgt"><span class="r_12">-3.1</span></td>
+                    <td class="rgt"><span class="gr_12">0.2</span></td>
+                    <td class="rgt"><span class="r_12">-2.8</span></td>
+                    <td class="rgt"><span class="r_12">-4.1</span></td>
+                    <td class="rgt"><span class="r_12">-6.7</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2014</span></td>
+                    <td class="rgt"><span class="gr_12">7.9</span></td>
+                    <td class="rgt"><span class="gr_12">30.0</span></td>
+                    <td class="rgt"><span class="gr_12">1.9</span></td>
+                    <td class="rgt"><span class="gr_12">20.3</span></td>
+                    <td class="rgt"><span class="gr_12">69.9</span></td>
+                  </tr><tr>
+                    <td><span class="b_13" align="left">2013</span></td>
+                    <td class="rgt"><span class="r_12">-12.0</span></td>
+                    <td class="rgt"><span class="gr_12">1.6</span></td>
+                    <td class="rgt"><span class="r_12">-13.5</span></td>
+                    <td class="rgt"><span class="gr_12">19.5</span></td>
+                    <td class="rgt"><span class="r_12">-4.7</span></td>
+                  </tr>
+                </tbody></table>
+              </div>
+
+              <div class="CL"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

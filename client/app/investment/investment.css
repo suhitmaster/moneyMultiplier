@@ -1,0 +1,23 @@
+.returns-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-contain {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.nav-val {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.box {
+  border: 2px solid grey;
+  margin: 1%;
+}
